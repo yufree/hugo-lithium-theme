@@ -7,21 +7,20 @@ googleAnalytics = ""
 disqusShortname = ""
 
 [permalinks]
-    post = "/:year/:month/:day/:title/"
-    page = "/:title/"
+    post = "/:year/:month/:day/:slug/"
 
 [[menu.main]]
     name = "About"
     url = "/about/"
 [[menu.main]]
     name = "GitHub"
-    url = ""
+    url = "https://github.com/rstudio/blogdown"
 [[menu.main]]
     name = "Twitter"
-    url = ""
+    url = "https://twitter.com/rstudio"
 
 [params]
-    description = ""
+    description = "A website built through Hugo and blogdown."
 
     [params.logo]
     url = "logo.png"
