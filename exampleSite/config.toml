@@ -5,6 +5,7 @@ title = "Lithium Theme"
 theme = "hugo-lithium-theme"
 googleAnalytics = ""
 disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
