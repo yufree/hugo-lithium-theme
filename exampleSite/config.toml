@@ -22,6 +22,11 @@ disqusShortname = ""
 [params]
     description = "A website built through Hugo and blogdown."
 
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.9.0"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
     [params.logo]
     url = "logo.png"
     width = 50
