@@ -2,6 +2,13 @@
 
 <main class="content" role="main">
 
+  {{ if .IsHome }}
+  <article class="article">
+    <div class="article-content">
+      {{ .Content }}
+    </div>
+  </article>
+  {{ else }}
   <div class="archive">
     {{ range (where .Site.Pages "Type" "post").GroupByDate "2006" }}
     <h2 class="archive-title">{{ .Key }}</h2>
@@ -15,6 +22,7 @@
     {{ end }}
     {{ end }}
   </div>
+  {{ end }}
 
 </main>
 
