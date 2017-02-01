@@ -29,4 +29,7 @@
 {{ partial "head_highlightjs" . }}
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/fonts.css" media="all">
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" media="all">
+{{ range .Site.Params.customCSS }}
+<link rel="stylesheet" href="{{ . | absURL }}">
+{{ end }}
 {{ partial "head_custom" . }}
