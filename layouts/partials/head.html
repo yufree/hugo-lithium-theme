@@ -3,8 +3,8 @@
 {{ .Hugo.Generator }}
 
 {{ if eq .URL "/" }}
-<title>{{ .Title }}</title>
-<meta property="og:title" content="{{ .Title }}">
+<title>{{ .Site.Title }}</title>
+<meta property="og:title" content="{{ .Site.Title }}">
 <meta property="og:type" content="website">
 {{ else }}
 <title>{{ .Title }} - {{ .Site.Title }}</title>
