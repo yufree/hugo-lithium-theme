@@ -2,7 +2,6 @@
 {{ if (not (eq $highVer "")) }}
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/{{ $highVer }}/highlight.min.js"></script>
 {{ range .Site.Params.highlightjsLang }}
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/{{ $highVer }}/languages/{{ . }}.min.js"></script>
-{{ end }}
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/{{ $highVer }}/languages/{{ . }}.min.js"></script>{{ end }}
 <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
 {{ end }}
