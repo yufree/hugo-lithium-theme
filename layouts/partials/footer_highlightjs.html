@@ -1,4 +1,4 @@
-{{ if not .Params.disable_highlight }}
+{{ if and (not .Params.disable_highlight) (in (string .Content) "</pre>") }}
 {{ $highVer := .Site.Params.highlightjsVersion }}
 {{ if (not (eq $highVer "")) }}
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/{{ $highVer }}/highlight.min.js"></script>
