@@ -287,6 +287,13 @@ a {
     float: right;
   }
 
+  .archive-item-link {
+    text-overflow: ellipsis;
+    max-width: calc(100% - 120px);
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
   .article-title {
     font-size: 42px;
   }
