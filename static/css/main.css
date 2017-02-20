@@ -25,6 +25,14 @@ a {
   outline: none;
 }
 
+code {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+code .MathJax {
+  background-color: white;
+}
+
 .wrapper {
   overflow: hidden;
   position: relative;
