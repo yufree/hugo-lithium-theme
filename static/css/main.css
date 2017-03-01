@@ -319,4 +319,7 @@ code .MathJax {
   .header, .footer {
     display: none;
   }
+  .article-content a {
+    box-shadow: none;
+  }
 }
