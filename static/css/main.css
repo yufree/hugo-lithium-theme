@@ -314,3 +314,9 @@ code .MathJax {
     font-size: inherit;
   }
 }
+
+@media print {
+  .header, .footer {
+    display: none;
+  }
+}
