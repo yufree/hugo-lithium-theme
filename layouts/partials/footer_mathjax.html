@@ -1,8 +1,8 @@
 {{ if and (not .Params.disable_mathjax) (or (in (string .Content) "\\") (in (string .Content) "$$")) }}
+<script src="{{ "/js/math-code.js" | absURL }}"></script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   tex2jax: {
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
   }
 });
 </script>
