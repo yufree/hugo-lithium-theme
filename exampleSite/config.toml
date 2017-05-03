@@ -29,6 +29,9 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
     highlightjsLang = ["r", "yaml"]
     highlightjsTheme = "github"
 
+    MathJaxCDN = "//cdn.bootcss.com"
+    MathJaxVersion = "2.7.1"
+
     [params.logo]
     url = "logo.png"
     width = 50
